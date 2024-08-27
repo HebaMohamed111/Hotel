@@ -1,0 +1,114 @@
+.home{
+    background-image: url(../img/baliHotelonWater.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+.home1{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.home2 h2::after{
+    content: "";
+    animation-name: Vacation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Vacation {
+    0%{content: "|";}
+    10%{content: "h|";}
+    20%{content: "ho|";}
+    30%{content: "hot|";}
+    40%{content: "hote|";}
+    50%{content: "hotel|";}
+    60%{content: "hote|";}
+    70%{content: "hot|";}
+    80%{content: "ho|";}
+    90%{content: "h|";}
+    100%{content: "|";}
+}
+
+.botton{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+a1{
+    position: relative;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+a1:hover
+{
+    background: var(--clr);
+    color: var(--clr);
+    letter-spacing: 0.25em;
+box-shadow: 0 0 35px var(--clr);
+}
+a1::before
+{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #342df2;
+}
+a1 span1
+{
+    position: relative;
+    z-index: 1;
+}
+a1 i1
+{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+a1 i1::after
+{
+content: "";
+position: absolute;
+top: 0;
+left:20%;
+width: 10px;
+height: 4px;
+background:#82cb76 ;
+transform: translatex(-50%) skewX(325deg);
+transition: 0.5s;
+}
+a1:hover  i1::before
+{
+width: 20px;
+left: 80%;
+}
+a1 i1::before
+{
+content: "";
+position: absolute;
+bottom: 0;
+left:20%;
+width: 10px;
+height: 4px;
+background:#82cb76 ;
+transform: translatex(-50%) skewX(325deg);
+transition: 0.5s;
+}
+a1:hover  i1::before
+{
+width: 20px;
+left: 80%;
+}
+
+
+
